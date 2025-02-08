@@ -8,11 +8,14 @@ while(True):
         break
     else:
         print(f"Wrong guess again.")
-        print("You have " + str(guess) + " left")
         count = count - 1
-        
+        print("You have " + str(count) + " left")
         
         if count == 0:
             print("you lost")
             break
 
+        if guess < number:
+            print("too low")
+        else:
+            print("too high")
