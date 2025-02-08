@@ -7,3 +7,7 @@ while(True):
         break
     else:
         print(f"Wrong guess again.")
+        if guess < number:
+            print("too low")
+        else:
+            print("too high")
